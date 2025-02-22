@@ -48,4 +48,36 @@
 
 @theme {
     --font-yekan: "IRANYekanX", "sans-serif";
+    --color-red-100: #CB1B1B;
+    --color-red-90: #E43434;
+    --color-red-80: #F66262;
+    --color-red-70: #FCA197;
+    --color-red-60: #F6BBBB;
+    --color-red-50: #F9D2D2;
+    --color-red-40: #FCE8E8;
+    --color-red-30: #FDF1F1;
+    --color-dark-red-100: #430909;
+    --color-dark-red-90: #5A0C0C;
+    --color-dark-red-80: #700F0F;
+    --color-dark-red-70: #871212;
+    --color-dark-red-60: #9E1515;
+    --color-dark-red-50: #B41818;
+    --color-gray-100: #909090;
+    --color-gray-90: #ADADAD;
+    --color-gray-80: #CBCBCB;
+    --color-gray-70: #D9D9D9;
+    --color-gray-60: #E1E1E1;
+    --color-gray-50: #EDEDED;
+    --color-gray-40: #F9F9;
+    --color-gray-30: #FAFAFA;
+    --color-black-100: #121212;
+    --color-black-90: #121212;
+    --color-black-80: #212121;
+    --color-black-70: #353535;
+    --color-black-60: #505050;
+    --color-black-50: #717171;
+    --color-yellow: #FFB800;
+    --color-green: #0F7B3B;
+
+
 }
