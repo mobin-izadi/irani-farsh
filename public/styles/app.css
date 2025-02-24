@@ -254,6 +254,9 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
+  .-top-3 {
+    top: calc(var(--spacing) * -3);
+  }
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
@@ -923,6 +926,9 @@
   }
   .justify-items-stretch {
     justify-items: stretch;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -1815,6 +1821,10 @@
   .transition-normal {
     transition-behavior: normal;
   }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -2027,6 +2037,45 @@
       content: var(--tw-content);
       --tw-content: '*';
       content: var(--tw-content);
+    }
+  }
+  .focus-within\:border-red-100 {
+    &:focus-within {
+      border-color: var(--color-red-100);
+    }
+  }
+  .focus-within\:text-red-100 {
+    &:focus-within {
+      color: var(--color-red-100);
+    }
+  }
+  .focus-within\:\[\&\>label\]\:-top-3 {
+    &:focus-within {
+      &>label {
+        top: calc(var(--spacing) * -3);
+      }
+    }
+  }
+  .focus-within\:\[\&\>label\]\:text-lg {
+    &:focus-within {
+      &>label {
+        font-size: var(--text-lg);
+        line-height: var(--tw-leading, var(--text-lg--line-height));
+      }
+    }
+  }
+  .focus-within\:\[\&\>label\]\:text-red-100 {
+    &:focus-within {
+      &>label {
+        color: var(--color-red-100);
+      }
+    }
+  }
+  .focus-within\:\[\&\>svg\]\:text-red-100 {
+    &:focus-within {
+      &>svg {
+        color: var(--color-red-100);
+      }
     }
   }
 }
@@ -2368,6 +2417,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -2385,10 +2438,6 @@
   inherits: false;
 }
 @property --tw-contain-style {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
