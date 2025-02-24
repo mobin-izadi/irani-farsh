@@ -58,7 +58,7 @@
         <main class="flex justify-center items-center py-15">
             <div class="flex justify-between items-center gap-25 ">
                 <!-- form login -->
-                <div class="basis-3/5">
+                <div class="basis-2/5">
                     <!-- title && description -->
                     <div class="font-bold flex flex-col gap-8 items-center ">
                         <h3 class="text-red-100 text-4xl">ایــرانی فرش</h3>
@@ -84,7 +84,7 @@
                             </svg>
                             <input type="text" id="password" class="w-full h-full outline-hidden">
                             <label for="password" class="absolute bg-white font-medium  right-10"> رمز عبور </label>
-                            <button>
+                            <button class="cursor-pointer">
                                 <svg class="size-5 text-black-60">
                                     <use href="#eye-off"></use>
                                 </svg>
@@ -98,13 +98,8 @@
                         شوید</p>
                 </div>
                 <!-- image -->
-                <div class=" relative h-181 basis-2/5 overflow-hidden rounded-[48px] ">
-                    <img src="../images/login/main.png" alt="فرش ایرانی" class="w-full h-full bg-cover">
-                    <!-- filter image -->
-                    <div
-                        class="bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(31,33,97,0.4)_83.26%),linear-gradient(0deg,rgba(0,0,0,0.02),rgba(0,0,0,0.02))] absolute inset-0 w-full h-full">
-                    </div>
-
+                <div
+                    class=" relative  basis-3/5 overflow-hidden rounded-[48px] w-150 h-196 bg-[url(../images/login/main.png)] bg-cover bg-center after:bg-linear-to-b after:from-transparent after:to-[#1F2161]/50 after:absolute after:inset-0  ">
                 </div>
 
             </div>

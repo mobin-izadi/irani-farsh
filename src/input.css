@@ -5,8 +5,8 @@
     font-family: IRANYekanX;
     font-style: normal;
     font-weight: 300;
-    src: url('../fonts/woff/IRANYekanX-Light.woff') format('woff'),
-        url('../fonts/woff2/IRANYekanX-Light.woff2') format('woff2');
+    src: url('../fonts/iranyekan/woff/IRANYekanX-Light.woff') format('woff'),
+        url('../fonts/iranyekan/woff2/IRANYekanX-Light.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -14,8 +14,8 @@
     font-family: IRANYekanX;
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/woff/IRANYekanX-Black.woff') format('woff'),
-        url('../fonts/woff2/IRANYekanX-Black.woff2') format('woff2');
+    src: url('../fonts/iranyekan/woff/IRANYekanX-Black.woff') format('woff'),
+        url('../fonts/iranyekan/woff2/IRANYekanX-Black.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -23,8 +23,8 @@
     font-family: IRANYekanX;
     font-style: normal;
     font-weight: 950;
-    src: url('../fonts/woff/IRANYekanX-ExtraBlack.woff') format('woff'),
-        url('../fonts/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2');
+    src: url('../fonts/iranyekan/woff/IRANYekanX-ExtraBlack.woff') format('woff'),
+        url('../fonts/iranyekan/woff2/IRANYekanX-ExtraBlack.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -32,8 +32,8 @@
     font-family: IRANYekanX;
     font-style: normal;
     font-weight: bold;
-    src: url('../fonts/woff/IRANYekanX-Bold.woff') format('woff'),
-        url('../fonts/woff2/IRANYekanX-Bold.woff2') format('woff2');
+    src: url('../fonts/iranyekan/woff/IRANYekanX-Bold.woff') format('woff'),
+        url('../fonts/iranyekan/woff2/IRANYekanX-Bold.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -41,8 +41,8 @@
     font-family: IRANYekanX;
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/woff/IRANYekanX-Regular.woff') format('woff'),
-        url('../fonts/woff2/IRANYekanX-Regular.woff2') format('woff2');
+    src: url('../fonts/iranyekan/woff/IRANYekanX-Regular.woff') format('woff'),
+        url('../fonts/iranyekan/woff2/IRANYekanX-Regular.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -80,4 +80,8 @@
     --color-green: #0F7B3B;
 
 
+}
+
+@utility container {
+    @apply mx-auto
 }
