@@ -81,18 +81,25 @@
                         </div>
                         <!-- form input -->
                         <div
-                            class="relative border border-gray-80 rounded-xl overflow-hidden flex items-center justify-start h-14 px-3.5 w-130">
-                            <svg class="size-5 text-gray-70">
-                                <use href="#key"></use>
+                            class="relative  border border-gray-80 rounded-xl  flex items-center justify-between gap-1 h-14 px-3.5 w-130 focus-within:border-red-100 focus-within:[&>svg]:text-red-100 focus-within:[&>label]:-top-3 focus-within:[&>label]:text-red-100 focus-within:[&>label]:text-lg">
+                            <svg class=" size-5 text-gray-70 ">
+                                <use href=" #key">
+                                </use>
                             </svg>
-                            <input type="text" id="password" class="w-full h-full outline-hidden">
-                            <label for="password" class="absolute bg-white font-medium  right-10"> رمز عبور </label>
-                            <button class="cursor-pointer">
-                                <svg class="size-5 text-black-60">
+                            <input type="password" id="password" class="w-full h-full outline-hidden">
+                            <label for="password"
+                                class="absolute bg-white font-medium  right-10 transition-all  duration-200"
+                                id="password-label"> رمز عبور </label>
+                            <button class="cursor-pointer" id="pass-status-btn">
+                                <svg class="size-5 text-black-60 pointer-events-none" id="eye-off-icon">
                                     <use href="#eye-off"></use>
+                                </svg>
+                                <svg class="size-5 text-black-60 hidden pointer-events-none" id="eye-icon">
+                                    <use href="#eye"></use>
                                 </svg>
                             </button>
                         </div>
+
                         <input type="submit" value="ورود"
                             class="bg-red-100 text-lg text-white rounded-xl overflow-hidden flex items-center justify-start h-14 px-3.5 w-130">
                     </form>
