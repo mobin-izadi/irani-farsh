@@ -508,6 +508,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-121 {
+    width: calc(var(--spacing) * 121);
+  }
   .w-130 {
     width: calc(var(--spacing) * 130);
   }
@@ -929,6 +932,9 @@
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -2047,6 +2053,26 @@
   .focus-within\:text-red-100 {
     &:focus-within {
       color: var(--color-red-100);
+    }
+  }
+  .xl\:w-150 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 150);
+    }
+  }
+  .xl\:basis-2\/5 {
+    @media (width >= 80rem) {
+      flex-basis: calc(2/5 * 100%);
+    }
+  }
+  .xl\:basis-3\/5 {
+    @media (width >= 80rem) {
+      flex-basis: calc(3/5 * 100%);
+    }
+  }
+  .xl\:gap-25 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 25);
     }
   }
   .focus-within\:\[\&\>label\]\:-top-3 {
