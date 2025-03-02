@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../images/public/favicon.png" type="image/png">
 </head>
 
-<body class="font-yekan">
+<body class="font-yekan overflow-x-hidden">
     <!-- icons -->
     <svg class="hidden">
         <symbol id="user" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,69 +52,159 @@
                 </g>
             </g>
         </symbol>
+        <symbol id="search" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+        <symbol id="menu-bar" fill="currentColor" viewBox="-8 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M15.4 12.6h-14.56c-0.48 0-0.84-0.36-0.84-0.84s0.36-0.84 0.84-0.84h14.52c0.48 0 0.84 0.36 0.84 0.84 0.040 0.44-0.36 0.84-0.8 0.84zM15.4 16.84h-14.56c-0.48 0-0.84-0.36-0.84-0.84s0.36-0.84 0.84-0.84h14.52c0.48 0 0.84 0.36 0.84 0.84s-0.36 0.84-0.8 0.84zM15.4 21.080h-14.56c-0.48 0-0.84-0.36-0.84-0.84s0.36-0.84 0.84-0.84h14.52c0.48 0 0.84 0.36 0.84 0.84s-0.36 0.84-0.8 0.84z">
+                </path>
+            </g>
+        </symbol>
+        <symbol id="cart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </symbol>
+        <symbol id="log-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
+            <path
+                d="M11.75 12.1667L15.9167 8L11.75 3.83333L10.575 5.00833L12.725 7.16667H5.08334V8.83333H12.725L10.575 10.9917L11.75 12.1667Z"
+                fill="currentColor" />
+            <path
+                d="M13.4167 13.8333H1.75001V2.16667H13.4167V3.83333H15.0833V2.16667C15.0833 1.25 14.3417 0.5 13.4167 0.5H1.75001C0.833343 0.5 0.0833435 1.25 0.0833435 2.16667V13.8333C0.0833435 14.75 0.833343 15.5 1.75001 15.5H13.4167C14.3417 15.5 15.0833 14.75 15.0833 13.8333V12.1667H13.4167V13.8333Z"
+                fill="currentColor" />
+        </symbol>
     </svg>
-    <div class="container">
-        <!-- main -->
-        <main class="flex justify-center items-center py-15">
-            <div class="flex justify-between items-center gap-3 xl:gap-25   ">
-                <!-- form login -->
-                <div class="basis-1/2 xl:basis-2/5 bg-white">
-                    <!-- title && description -->
-                    <div class="font-bold flex flex-col gap-8 items-center ">
-                        <h3 class="text-red-100 text-4xl">ایــرانی فرش</h3>
-                        <span class="text-dark-red-60 text-2xl"> ورود</span>
-                    </div>
-                    <!-- form -->
-                    <form action="" class="mt-14 flex flex-col items-center gap-8">
-                        <!-- form input -->
-                        <div
-                            class="relative  border border-gray-80 rounded-xl  flex items-center justify-start gap-1 h-14 px-3.5 w-80 lg:w-130 focus-within:border-red-100 focus-within:[&>svg]:text-red-100 focus-within:[&>label]:-top-3 focus-within:[&>label]:text-red-100 focus-within:[&>label]:text-lg">
-                            <svg class=" size-5 text-gray-70 ">
-                                <use href=" #user">
-                                </use>
-                            </svg>
-                            <input type="text" id="username" class="w-full h-full outline-hidden">
-                            <label for="username"
-                                class="absolute bg-white font-medium  right-10 transition-all  duration-200"
-                                id="username-label"> شماره
-                                موبایل </label>
-                        </div>
-                        <!-- form input -->
-                        <div
-                            class="relative  border border-gray-80 rounded-xl  flex items-center justify-between gap-1 h-14 px-3.5 w-80 lg:w-130 focus-within:border-red-100 focus-within:[&>svg]:text-red-100 focus-within:[&>label]:-top-3 focus-within:[&>label]:text-red-100 focus-within:[&>label]:text-lg">
-                            <svg class=" size-5 text-gray-70 ">
-                                <use href=" #key">
-                                </use>
-                            </svg>
-                            <input type="password" id="password" class="w-full h-full outline-hidden">
-                            <label for="password"
-                                class="absolute bg-white font-medium  right-10 transition-all  duration-200"
-                                id="password-label"> رمز عبور </label>
-                            <button class="cursor-pointer" id="pass-status-btn">
-                                <svg class="size-5 text-black-60 pointer-events-none" id="eye-off-icon">
-                                    <use href="#eye-off"></use>
-                                </svg>
-                                <svg class="size-5 text-black-60 hidden pointer-events-none" id="eye-icon">
-                                    <use href="#eye"></use>
-                                </svg>
-                            </button>
-                        </div>
 
-                        <input type="submit" value="ورود"
-                            class="bg-red-100 text-lg text-white rounded-xl overflow-hidden flex items-center justify-start h-14 px-3.5 w-80 lg:w-130">
-                    </form>
-                    <p class="text-xl text-center mt-6 font-light">ثبت نام نکرده اید؟همین حالا <a href=""
-                            class="text-red-100">عضو</a>
-                        شوید</p>
-                </div>
-                <!-- image -->
-                <div
-                    class=" relative basis-1/2  xl:basis-3/5 overflow-hidden rounded-[48px] w-100 lg:w-121 xl:w-150 h-187 lg:h-196 bg-[url(../images/login/main.png)] bg-cover bg-center after:bg-linear-to-b after:from-transparent after:to-[#1F2161]/50 after:absolute after:inset-0  ">
-                </div>
+    <!-- header -->
+    <header class="flex flex-col items-center justify-center gap-3 py-3 mx-4 lg:hidden">
+        <!-- header menu -->
+        <div class="flex justify-between items-center w-full">
+            <div class="flex items-center gap-3">
+                <button class="bg-gray-50 rounded-sm size-8 flex justify-center items-center ">
+                    <svg class=" size-7  ">
+                        <use href=" #menu-bar">
+                        </use>
+                    </svg>
+                </button>
+                <h1 class="text-2xl font-bold text-red-100">ایـــرانی فرش</h1>
+            </div>
+            <!-- search -->
+            <div
+                class="hidden  relative bg-gray-50  border border-gray-80 rounded-xl  sm:flex items-center justify-start gap-1 h-12 px-3.5 w-85 focus-within:border-red-100 ">
+                <button>
+                    <svg class=" size-5 text-black-50 ">
+                        <use href=" #search">
+                        </use>
+                    </svg>
+                </button>
+                <input type="search" class="w-full h-full outline-hidden text-black-50" placeholder="جستجو فرش">
+            </div>
+            <div class="flex items-center gap-2">
+                <button class=" border border-red-100 rounded-sm size-8 flex justify-center items-center ">
+                    <svg class=" size-5 text-red-100  ">
+                        <use href=" #cart">
+                        </use>
+                    </svg>
+                </button>
+                <button class=" border border-red-100 rounded-sm size-8 flex justify-center items-center ">
+                    <svg class=" size-5 text-red-100  ">
+                        <use href=" #log-out">
+                        </use>
+                    </svg>
+                </button>
 
             </div>
-        </main>
-    </div>
+        </div>
+        <!-- search -->
+        <div
+            class="sm:hidden relative bg-gray-50  border border-gray-80 rounded-xl  flex items-center justify-start gap-1 h-12 px-3.5 w-full focus-within:border-red-100 ">
+            <button>
+                <svg class=" size-5 text-black-50 ">
+                    <use href=" #search">
+                    </use>
+                </svg>
+            </button>
+            <input type="search" class="w-full h-full outline-hidden text-black-50" placeholder="جستجو فرش">
+        </div>
+
+    </header>
+    <!-- main -->
+    <main class="flex justify-center items-center pb-15 lg:py-15">
+        <div
+            class="flex justify-between items-center gap-0 lg:gap-3 xl:gap-25 flex-wrap-reverse lg:flex-nowrap sm:max-lg:w-full    ">
+            <!-- form login -->
+            <div
+                class="basis-full lg:basis-1/2 xl:basis-2/5 bg-white rounded-3xl sm:rounded-[48] py-3 z-40 -translate-y-10">
+                <!-- title && description -->
+                <div class="font-bold flex flex-col gap-8 items-center ">
+                    <h3 class="hidden lg:block text-red-100 text-4xl">ایــرانی فرش</h3>
+                    <span class="text-dark-red-60 text-2xl"> ورود</span>
+                </div>
+                <!-- form -->
+                <form action="" class="mt-8 md:mt-14 flex flex-col items-center gap-8">
+                    <!-- form input -->
+                    <div
+                        class="relative  border border-gray-80 rounded-xl  flex items-center justify-start gap-1 h-14 px-3.5 w-85 sm:w-130 focus-within:border-red-100 focus-within:[&>svg]:text-red-100 focus-within:[&>label]:-top-3 focus-within:[&>label]:text-red-100 focus-within:[&>label]:text-lg">
+                        <svg class=" size-5 text-gray-70 ">
+                            <use href=" #user">
+                            </use>
+                        </svg>
+                        <input type="text" id="username" class="w-full h-full outline-hidden">
+                        <label for="username"
+                            class="absolute bg-white font-medium  right-10 transition-all  duration-200"
+                            id="username-label"> شماره
+                            موبایل </label>
+                    </div>
+                    <!-- form input -->
+                    <div
+                        class="relative  border border-gray-80 rounded-xl  flex items-center justify-between gap-1 h-14 px-3.5 w-85 sm:w-130 focus-within:border-red-100 focus-within:[&>svg]:text-red-100 focus-within:[&>label]:-top-3 focus-within:[&>label]:text-red-100 focus-within:[&>label]:text-lg">
+                        <svg class=" size-5 text-gray-70 ">
+                            <use href=" #key">
+                            </use>
+                        </svg>
+                        <input type="password" id="password" class="w-full h-full outline-hidden">
+                        <label for="password"
+                            class="absolute bg-white font-medium  right-10 transition-all  duration-200"
+                            id="password-label"> رمز عبور </label>
+                        <button class="cursor-pointer" id="pass-status-btn">
+                            <svg class="size-5 text-black-60 pointer-events-none" id="eye-off-icon">
+                                <use href="#eye-off"></use>
+                            </svg>
+                            <svg class="size-5 text-black-60 hidden pointer-events-none" id="eye-icon">
+                                <use href="#eye"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <input type="submit" value="ورود"
+                        class="bg-red-100 text-lg text-white rounded-xl overflow-hidden flex items-center justify-start h-14 px-3.5 w-85 sm:w-130">
+                </form>
+                <p class="text-base sm:text-xl text-center mt-6 font-light">ثبت نام نکرده اید؟همین حالا <a href=""
+                        class="text-red-100">عضو</a>
+                    شوید</p>
+            </div>
+            <!-- image -->
+            <div
+                class=" relative basis-full lg:basis-1/2  xl:basis-3/5 overflow-hidden lg:rounded-[48px] w-screen lg:w-121 xl:w-150 h-60 lg:h-196 bg-[url(../images/login/main.png)] bg-cover bg-center after:bg-linear-to-b after:from-transparent after:to-[#1F2161]/50 after:absolute after:inset-0  ">
+            </div>
+
+        </div>
+    </main>
+
     <script src="../scripts/login.js"></script>
 </body>
 
